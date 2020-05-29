@@ -1,0 +1,1056 @@
+// Design for all device
+
+$contact: #da6b64;
+$bg-yellow: #ebb94d;
+$bg-blue: #016ea9;
+$bg-cream: #fef5e0;
+
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+  background-color: silver;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff
+}
+
+a:hover {
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff
+}
+
+img {
+  width: 100%;
+}
+
+// bracket
+
+.bracket {
+  font-weight: bold;
+  position: relative;
+  padding: 1em;
+  margin-bottom: 2em;
+
+  h3 {
+    margin: 0 2em 1em 2em;
+  }
+}
+
+.bracket::before,
+.bracket::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: inline-block;
+}
+
+.bracket::before {
+  border-left: solid .3em $bg-yellow;
+  border-top: solid .3em $bg-yellow;
+  top: 0%;
+  left: 4%;
+  transform: translate(-50%, -50%);
+}
+
+.bracket::after {
+  border-right: solid .3em $bg-yellow;
+  border-bottom: solid .3em $bg-yellow;
+  bottom: -20%;
+  right: -2%;
+  transform: translate(-50%, -50%);
+}
+
+// bracket-white
+
+.bracket-white {
+  position: relative;
+  padding: 1em;
+  margin-bottom: 2em;
+
+  h4 {
+    margin: 0 2em 1em 2em;
+  }
+}
+
+.bracket-white::before,
+.bracket-white::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: inline-block;
+}
+
+.bracket-white::before {
+  border-left: solid .2em #ffffff;
+  border-top: solid .2em #ffffff;
+  top: 0%;
+  left: 4%;
+  transform: translate(-50%, -50%);
+}
+
+.bracket-white::after {
+  border-right: solid .2em #ffffff;
+  border-bottom: solid .2em #ffffff;
+  bottom: -50%;
+  right: -2%;
+  transform: translate(-50%, -50%);
+}
+
+
+.container {
+  padding: 3em 0;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 80%;
+  overflow: hidden;
+}
+
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  color: #333;
+  z-index: 2;
+  text-align: center;
+  margin: 0 auto;
+  border: double 5px #364e96;
+
+  .title {
+    color: #364e96;
+    padding: 1px;
+    display: inline-block;
+    border-bottom: solid 3px #364e96;
+    margin-bottom: 1rem;
+  }
+
+  .text {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: .5rem;
+  }
+
+  .link {
+    text-align: center;
+
+    a {
+      background-color: #364e96;
+      color: #fff;
+      border: solid 2px #364e96;
+      border-radius: 3px; 
+      padding: 7px;
+      transition: all .5s;
+    }
+  
+    a:hover {
+      background-color: #fff;
+      color: #364e96;
+    }
+  }
+
+}
+
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn i {
+  font-size: 30px;
+  color: #333;
+  
+}
+.black-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+// header
+header {
+  display: flex;
+  padding: 0 4em; // 背景以外の横幅
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  .header-left {
+    display: flex;
+    margin: .5rem;
+
+    a {
+      display: inline-block;
+
+      img {
+        width: 9em;
+      }
+    }
+
+    p {
+      margin-top: 3.5em;
+      font-size: .5em;
+      font-weight: bold;
+      color: #333333;
+    }
+  }
+
+  .header-right {
+    margin: 1.5em 0 0 auto;
+
+    a {
+      display: inline-block;
+      background-color: $contact;
+      padding: 1em 3em;
+      border-radius: 3em;
+      font-weight: 100;
+      font-size: .5em;
+    }
+  }
+}
+
+
+
+// main-visual
+.main-visual {
+  background-image: url(https://kazukiyam.github.io/iSara/img/mainsp.jpg);
+  background-size: cover;
+  text-align: center;
+  height: 30em;
+  color: #333333;
+
+  h4 {
+    padding-top: 3em;
+    font-weight: bold;
+    line-height: 2;
+  }
+
+  img {
+    width: 20em;
+  }
+
+  p {
+    padding-top: 1em;
+    font-weight: bold;
+  }
+
+}
+
+// contact1
+.contact1 {
+  background-color: $bg-yellow;
+
+  p {
+    color: #ffffff;
+  }
+
+  .free {
+    background-color: #ffffff;
+    color: $contact;
+    width: 28em;
+    margin: 1em auto;
+    font-size: .8em;
+  }
+
+  .contact-btn {
+    display: inline-block;
+    background-color: $contact;
+    padding: 1.2em 9em;
+    border-radius: 3em;
+  }
+
+  p {
+    color: #ffffff;
+    margin: 1.5em;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .sns {
+    padding: .7em;
+    font-size: .5em;
+    border-radius: .5em;
+  }
+
+  .fa-twitter {
+    background-color: #1DA1F2;
+  }
+
+  .fa-thumbs-up,
+  .share {
+    background-color: #4267B2;
+  }
+}
+
+
+// introduction
+.introduction {
+  background-image: url(https://kazukiyam.github.io/iSara/img/introbottom.jpg);
+  background-size: cover;
+  background-position: bottom;
+  padding: 2em 0 10em 0;
+  color: #333333;
+
+  p {
+    margin-bottom: 2em;
+    font-weight: 300;
+  }
+
+  .underline {
+    font-weight: bold;
+    background: linear-gradient(transparent 70%, $bg-yellow 70%);
+  }
+
+}
+
+
+// about-service
+.about-service {
+  background-color: $bg-cream;
+  position: relative;
+  padding: 5em 0 2em;
+
+  .about {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $bg-yellow;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1em;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    line-height: 1em;
+  }
+
+  h5 {
+    padding: 2em 0 1em;
+  }
+
+  .skill-box {
+    background-color: #ffffff;
+    border: .11em solid $bg-yellow;
+    margin: 1em;
+
+    h5 {
+      margin-bottom: 1em;
+    }
+
+    .skill-item {
+      padding: 1em 2em;
+
+      .item {
+        display: inline-block;
+        margin: .5em 2em;
+
+        img {
+          width: auto;
+          height: auto;
+        }
+
+        p {
+          color: #333333;
+          font-weight: 100;
+          font-size: .5em;
+          padding: 1em;
+        }
+      }
+    }
+  }
+}
+
+
+// step
+.step {
+  background-image: url(https://kazukiyam.github.io/iSara/img/aboutsecondbgsp.jpg);
+  background-size: cover;
+  color: #ffffff;
+
+  h3 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  h5 {
+    margin-bottom: 2em;
+    line-height: 2em;
+
+    span {
+      color: $bg-yellow;
+      font-weight: bold;
+    }
+  }
+
+  .step-box {
+    background-color: #ffffff;
+    color: #333333;
+    margin: 1em;
+    padding: .5em;
+    border-radius: .5em;
+
+    .en {
+      background-color: $bg-yellow;
+      color: #ffffff;
+      margin: 1em;
+      font-size: 1em;
+      border-radius: .5em;
+    }
+
+    p {
+      font-size: .8em;
+      font-weight: bold;
+      margin-top: 3em;
+    }
+
+    .ja {
+      font-size: 1em;
+      font-weight: bold;
+    }
+  }
+}
+
+
+// about-learning
+.important {
+  background-color: $bg-blue;
+  color: #ffffff;
+  line-height: 1.5em;
+  font-weight: bold;
+
+  span {
+    color: $bg-yellow;
+  }
+}
+
+.about-learning {
+  background-color: #fff;
+  padding: 3em 0 1em;
+  text-align: center;
+
+  h3 {
+    font-weight: 500;
+    margin-bottom: 2em;
+  }
+
+  .small {
+    font-size: .5em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  .learning-ball {
+    display: flex;
+
+    img {
+      width: 20%;
+      margin: 3em auto;
+    }
+  }
+}
+
+// about-recommend
+.about-recommend {
+  background-color: $bg-cream;
+
+  .recommend-box {
+    display: flex;
+    margin: 3em 0 3em;
+
+    .recommend-item {
+      margin: 0 1em;
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+
+      h5 {
+        font-size: 1em;
+        color: $bg-yellow;
+        margin-top: 1em;
+      }
+
+      p {
+        color: #333333;
+        font-weight: 100;
+      }
+    }
+  }
+
+  .recommend-benefit {
+    background-color: #fff;
+    border: solid .1em $bg-yellow;
+    margin: 2em;
+    padding: 2em 4em;
+
+    h3 {
+      color: $bg-yellow;
+
+    }
+  }
+
+  p {
+    color: #333333;
+    font-size: .7em;
+  }
+}
+
+
+// member
+.member {
+  background: url(https://kazukiyam.github.io/iSara/img/teacherbgsp.jpg);
+  background-size: cover;
+  color: #ffffff;
+
+  h3 {
+    margin-bottom: 2em;
+  }
+
+  .p {
+    font-size: 1em;
+    margin-bottom: 15em;
+  }
+
+  .member-box {
+    border: solid 3px #ffffff;
+    margin-bottom: 13em;
+    padding: 3em 2em 1em 2em;
+    height: 18em;
+    position: relative;
+
+
+    img {
+      position: absolute;
+      width: 13em;
+      top: -25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+
+
+    p {
+      font-weight: 100;
+      font-size: .9em;
+    }
+
+    .left {
+      text-align: left;
+    }
+  }
+
+  .member-box:last-child {
+    margin-bottom: 3em;
+  }
+}
+
+
+// qa
+.question {
+  position: relative;
+  background-color: $bg-yellow;
+  color: #ffffff;
+
+  h3 {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 3.5em;
+    height: 3.5em;
+    line-height: 3.5em;
+    color: $bg-yellow;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.5em;
+  }
+
+ 
+
+  .caret {
+    color: $bg-yellow;
+    font-size: 9em;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+.answer {
+  background-color: #fff;
+
+
+  .answers {
+    display: flex;
+    margin: 2em 0;
+    text-align: left;
+
+    img {
+      width: 30%;
+      height: 100%;
+      border: 3px solid $bg-yellow;
+    }
+
+    h5 {
+      color: #777;
+      font-style: oblique;
+      font-weight: 300;
+      line-height: 1.5em;
+      margin: 1em;
+    }
+
+    span {
+      display: inline-block;
+      font-size: .7em;
+      text-decoration: underline;
+      margin-top: 1em;
+    }
+  }
+
+}
+
+
+// learning 
+.learning {
+  background: url(https://kazukiyam.github.io/iSara/img/classbgsp.jpg);
+  background-size: cover;
+  color: #ffffff;
+
+  .lesson {
+    margin: 2em;
+
+    table {
+      margin: 0 auto;
+      border-collapse: separate;
+      border-radius: .5em;
+      border-top: $bg-blue 3px solid;
+      border-left: $bg-blue 3px solid;
+      width: 100%;
+    }
+
+    th,
+    td {
+      display: block;
+      padding: 1em;
+    }
+
+
+    th {
+      background-color: $bg-blue;
+      color: #ffffff;
+      border-radius: .5em .5em 0 0;
+
+    }
+
+    td {
+      background-color: #ffffff;
+      color: #333333;
+      border-right: $bg-blue 3px solid;
+      border-bottom: $bg-blue 3px solid;
+      font-size: .9em;
+      font-weight: bold;
+      border-bottom: dotted 1px rgb(229, 229, 229);
+    }
+
+    td:last-child {
+      border-radius: 0 0 .5em .5em;
+    }
+  }
+
+}
+
+// learning-support
+.learning-support {
+  background-color: $bg-blue;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+// schedule for pc
+.schedule-pc {
+  background-color: #fff;
+  color: #333333;
+
+  h3 {
+    margin-bottom: 2em;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .schedule-box {
+    margin-top: 3em;
+
+    .boxes {
+      background-color: $bg-cream;
+      display: flex;
+      padding: 3em 1em;
+
+      .boxes-left {
+        margin: 0 2em;
+
+        img {
+          width: 6em;
+          margin-bottom: 2em;
+        }
+      }
+
+      .boxes-right {
+        text-align: left;
+        font-size: .8em;
+      }
+
+    }
+
+    img {
+      width: 60%;
+    }
+  }
+}
+
+
+
+// bangkok
+.bangkok {
+  background: url(https://kazukiyam.github.io/iSara/img/bangkokbg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+
+  .container {
+    text-align: left;
+
+    h4 {
+      margin-bottom: 1em;
+    }
+
+    .light {
+      font-weight: light;
+      font-size: .7em;
+    }
+
+    .bold {
+      font-weight: bold;
+      margin: 1em 0 2em 0;
+      line-height: 2em;
+    }
+  }
+}
+
+// benefit 
+.benefit {
+  background-color: #f7c23c;
+
+  h3 {
+    margin-bottom: 2em;
+  }
+
+  p {
+    margin-bottom: 5em;
+  }
+
+  .benefit-group-pc {
+    border: 2px solid #ffffff;
+    position: relative;
+    padding: 3em;
+
+    h3 {
+      position: absolute;
+      top: -1%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f7c23c;
+      padding: .5em;
+    }
+
+    .benefit-box {
+      margin: 2em auto;
+      padding: 3em 1em;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 16em;
+      height: 16em;
+      text-align: center;
+
+      h4 {
+        color: #f7c23c;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
+
+// Value
+.value {
+  background: url(https://kazukiyam.github.io/iSara/img/specialdetailsp.jpg);
+  background-size: cover;
+  color: #ffffff;
+
+  h3 {
+    margin-bottom: 2em;
+  }
+
+  // .bracket-white {
+  //   position: relative;
+  //   padding: 1em;
+  //   margin-bottom: 2em;
+  // }
+
+  // .bracket-white::before,
+  // .bracket-white::after {
+  //   content: '';
+  //   width: 50px;
+  //   height: 50px;
+  //   position: absolute;
+  //   display: inline-block;
+  // }
+
+  // .bracket-white::before {
+  //   border-left: solid .2em #ffffff;
+  //   border-top: solid .2em #ffffff;
+  //   top: -35%;
+  //   left: -2%;
+  //   margin-left: 1em;
+  // }
+
+  // .bracket-white::after {
+  //   border-right: solid .2em #ffffff;
+  //   border-bottom: solid .2em #ffffff;
+  //   bottom: -35%;
+  //   right: -2%;
+  //   margin-right: 1em;
+  // }
+}
+
+// message
+.message {
+  background-color: #fff;
+
+  h3 {
+    margin-bottom: 2em;
+  }
+
+  p {
+    margin-bottom: 2em;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .speech {
+    text-align: left;
+    color: #777;
+    margin: 2em 1em;
+    font-size: .9em;
+  }
+}
+
+// contact-form
+.contact2 {
+  background-color: $bg-yellow;
+
+  .contact-form {
+    margin: 2em auto;
+
+    input {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: #ffffff;
+      background-image: none;
+      border: 1px solid #ffffff;
+      color: inherit;
+      font-family: inherit;
+      font-size: 1em;
+      padding: 0.4em 0.8em;
+      width: 80%;
+      border-radius: .3em;
+      height: 3em;
+      margin: .5em auto;
+    }
+
+    textarea {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: #ffffff;
+      background-image: none;
+      border: 1px solid #ffffff;
+      color: inherit;
+      font-family: inherit;
+      font-size: 1em;
+      padding: 0.4em 0.8em;
+      width: 80%;
+      border-radius: .3em;
+      height: 6em;
+      margin: 2em auto;
+    }
+
+    .submit {
+      display: inline-block;
+      width: 80%;
+      height: 3em;
+      padding: .7em;
+      background-color: $contact;
+      border-radius: 3em;
+      letter-spacing: 1em;
+      font-size: 1.2em;
+    }
+  }
+}
+
+// question
+
+.questions {
+  background-color: #fff;
+  padding: 2em 3em;
+
+  h3 {
+    text-align: center;
+    padding: 2em 0;
+  }
+
+  .question-accordion {
+    position: relative;
+    width: 100%;
+
+    margin-bottom: .3em;
+    text-align: center;
+
+
+    .question-article-title {
+      text-align: left;
+      display: block;
+      position: relative;
+      margin: 0;
+      padding: 1em;
+      font-weight: 600;
+      cursor: pointer;
+      border: solid 1px #ececec;
+
+      .fa-question-circle {
+        color: $bg-blue;
+      }
+    }
+
+    .question-article-title:hover,
+    .question-article-title:active,
+    .content-entry.open .question-article-title {
+      text-decoration: underline;
+    }
+
+    .question-article-title:hover i:before,
+    .question-article-title:hover i:active,
+    .content-entry.open i {
+      text-decoration: underline;
+    }
+
+    .question-article-title {
+      position: relative;
+    }
+
+    .question-article-title:after {
+      content: "";
+      position: absolute;
+      right: 25px;
+      top: 38%;
+      transition: all 0.2s ease-in-out;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-top: solid 3px #ececec;
+      border-right: solid 3px #ececec;
+      -webkit-transform: rotate(135deg);
+      transform: rotate(135deg);
+    }
+
+    .question-article-title.open:after {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 45%;
+    }
+
+    .question-accordion-content {
+      text-align: left;
+      display: none;
+      padding: 1.5em;
+      font-weight: 600;
+      font-size: .9em;
+      color: #333333;
+    }
+  }
+}
+
+// footer 
+footer {
+  background-color: #ececec;
+  padding: 3em;
+  text-align: center;
+  font-size: .7em;
+
+  .sns {
+    padding: .7em;
+    font-size: .5em;
+    border-radius: .5em;
+    margin-bottom: 4em;
+  }
+
+  .fa-twitter {
+    background-color: #1DA1F2;
+  }
+
+  .fa-thumbs-up,
+  .share {
+    background-color: #4267B2;
+  }
+
+  .name {
+    color: #016ea9;
+  }
+}

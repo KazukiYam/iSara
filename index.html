@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!-- Style CSS -->
+  
+  <link rel="stylesheet" href="https://kazukiyam.github.io/iSara/css/styles.css">
+
+  <!-- Responsive CSS -->
+  
+  <link rel="stylesheet" href="https://kazukiyam.github.io/iSara/css/responsive.css">
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/48317d2fd7.js" crossorigin="anonymous"></script>
+  
+  
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <script src="https://kazukiyam.github.io/iSara/js/script.js" type="text/javascript"></script>
+
+  <title>iSara[イサラ]｜バンコクのノマドエンジニア育成講座</title>
+</head>
+
+<body>
+  <!-- modal -->
+  <div class="popup" id="js-popup">
+    <div class="popup-inner">
+      <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
+      <h3 class="title">お知らせ</h3>
+      <div class="text">
+        <h5>This site is created for only private using.</h5>
+        <p>プログラミング学習のために模写した模擬サイトです。<br><span>公式サイトではありません。</span><br>外部リンク、問い合わせフォーム等は機能しません。</p>
+        <p></p>
+      </div>
+      <div class="link">
+        <a href="https://isara.life/" target="_blank">公式サイトはこちら</a>
+        <a href="https://github.com/KazukiYam/iSara" target="_blank">GitHubリポジトリ</a>
+      </div>
+    </div>
+    <div class="black-background" id="js-black-bg"></div>
+  </div>
+  <!-- modal -->
+
+  <!-- header -->
+  <header>
+    <div class="header-left">
+      <a href="#">
+        <img src="https://kazukiyam.github.io/iSara/img/isaralogo.png" alt="#">
+      </a>
+      <p>バンコクのノマドエンジニア育成講座</p>
+    </div>
+    <div class="header-right">
+      <a class="pc" href="#">お問い合わせ / 資料請求はこちら</a>
+      <a class="sp" href="#"><i class="fas fa-file-alt"></i>資料請求</a>
+    </div>
+  </header>
+  <!-- header -->
+
+  <!-- main-visual -->
+  <div id="main-visual" class="main-visual">
+    <div class="container">
+      <h4>プログラミングで<br>
+        人生の安定を手にいれよう</h4>
+      <img src="https://kazukiyam.github.io/iSara/img/isaralogolarge.png" alt="#">
+      <p>バンコクのノマドエンジニア育成講座<br>
+        iSara[イサラ]</p>
+    </div>
+
+  </div>
+  <!-- main-visual -->
+
+  <!-- contact1 -->
+  <div id="contact1" class="contact1">
+    <div class="container">
+      <p>まずは２０日間で、<br>
+        月１０万円稼げるスキルを手にいれよう。</p>
+      <p class="free">※受講料金は実質０円です。詳しくは資料請求をどうぞ。</p>
+      <a class="contact-btn" href="#">
+        お問い合わせ＆資料請求はこちら
+      </a>
+      <p>第６期生：2019年11月25日 ~ 2019年12月14日＊締め切りました</p>
+      <p>第７期生：2020年2月17日 ~ 2019年3月7日＊締め切りました</p>
+      <p>第8期生：2020年4月〜5月ごろを予定＊資料請求受付中です</p>
+      <a href="#" class="sns fab fa-twitter">ツイート</a>
+      <a href="#" class="sns fas fa-thumbs-up">いいね！</a>
+      <a class="sns share" href="#">シェア</a>
+    </div>
+  </div>
+  <!-- contact1 -->
+
+  <!-- introduction -->
+  <div id="introduction" class="introduction">
+    <div class="container">
+      <div class="bracket">
+        <h3>エンジニアとして本当の自由を手に入れるためには？</h3>
+      </div>
+      <p>エンジニア需要の高まりに伴い、プログラミングスクールが増えています。<br>
+        しかしそこでの学習の先は、 提携して決められた就職先に就職すること。</p>
+      <p>これで本当にいいのですか？<br>
+        日本人エンジニアはアメリカと較べて給料が格段に低い。<br>
+        その理由がここにあり、 エンジニアは自分の給料をコントロールすべきなのです。</p>
+      <p>スキルを身につけたエンジニアは、人生をコントロールすることでより自由に。<br>
+        そこで必要なのが <span class="underline">「稼ぐ力」</span>です。</p>
+    </div>
+  </div>
+  <!-- introduction -->
+
+  <!-- about-service -->
+  <div id="about-service" class="about-service">
+    <div class="container">
+      <h5 class="about">ABOUT</h5>
+      <div class="bracket">
+        <h3>ノマドエンジニア育成講座<br>
+          iSara[イサラ]とは</h3>
+      </div>
+      <h5>「 稼ぐこと 」にフォーカスしたWebエンジニア育成講座です。</h5>
+      <div class="skill-box">
+        <h5>稼げるエンジニアに必要な５つのスキルとは？</h5>
+        <div class="skill-item">
+          <div class="item">
+            <img src="https://kazukiyam.github.io/iSara/img/skill.jpg" alt="#">
+            <p>基礎的なプログラミングスキル</p>
+          </div>
+          <div class="item">
+            <img src="https://kazukiyam.github.io/iSara/img/sales.jpg" alt="#">
+            <p>案件獲得に必要な営業力</p>
+          </div>
+          <div class="item">
+            <img src="https://kazukiyam.github.io/iSara/img/document.jpg" alt="#">
+            <p>見積もり作成から納品までの知識</p>
+          </div>
+          <div class="item">
+            <img src="https://kazukiyam.github.io/iSara/img/plusone.jpg" alt="#">
+            <p>自分の付加価値を高めるスキル</p>
+          </div>
+          <div class="item">
+            <img src="https://kazukiyam.github.io/iSara/img/connection.jpg" alt="#">
+            <p>フリーランス同士の横のつながり</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about-service -->
+
+  <!-- step -->
+  <div id="step" class="step">
+    <div class="container">
+      <h3>iSaraで「基本的なプログラミングスキル」は教えません</h3>
+      <h5>基礎的なプログラミングスキルは無料で学べる時代。<br>
+        iSaraでは、基礎知識学習は<span>事前課題</span>と<span>チャットサポート</span>のみ。</h5>
+      <div class="step-box">
+        <h5 class="en">STEP.1</h5>
+        <p>【バンコク渡航前１ヶ月】</p>
+        <h5 class="ja">事前課題で基礎知識を学ぶ</h5>
+      </div>
+      <div class="step-box">
+        <h5 class="en">STEP.2</h5>
+        <p>【バンコク到着後】</p>
+        <h5 class="ja">実践的に稼ぐことに特化した学習</h5>
+      </div>
+      <div class="step-box">
+        <h5 class="en">STEP.3</h5>
+        <p>【バンコク帰国後】</p>
+        <h5 class="ja">講座実施後の案件獲得サポート</h5>
+      </div>
+    </div>
+  </div>
+  <!-- step -->
+
+  <!-- about-learning -->
+  <div class="important">
+    <div class="container">
+      <p>スキルアップしてもフリーランスエンジニアとして食べていくことは難しい。<br>
+        フリーランスには<span>プログラミングスキル以外</span>が大切。</p>
+    </div>
+  </div>
+  <div id="about-learning" class="about-learning">
+    <div class="container">
+      <h3>iSara<span class="small">[イサラ]</span>で学べること</h3>
+      <p>iSaraの学習では、エンジニアとして「稼ぐ」ために必要な能力を身につけます。</p>
+      <div class="learning-ball">
+        <img src="https://kazukiyam.github.io/iSara/img/salesskill.jpg" alt="#">
+        <img src="https://kazukiyam.github.io/iSara/img/knowledge.jpg" alt="#">
+        <img src="https://kazukiyam.github.io/iSara/img/skillup.jpg" alt="#">
+        <img src="https://kazukiyam.github.io/iSara/img/freelanceconnection.jpg" alt="#">
+      </div>
+      <p>これらを教えるのがiSaraです。</p>
+    </div>
+  </div>
+  <!-- about-learning -->
+
+  <!-- about-recommend -->
+  <div id="about-recommend" class="about-recommend">
+    <div class="container">
+      <div class="bracket">
+        <h5>他のプログラミングスクールとここが違う！</h5>
+        <h3>iSara[イサラ]の３つのメリット</h3>
+      </div>
+      <div class="recommend-box">
+        <div class="recommend-item">
+          <img src="https://kazukiyam.github.io/iSara/img/learnfromfreelancer.jpg" alt="#">
+          <h5>現役フリーランスから学べる</h5>
+          <p>他のプログラミングスクールとは違い、実際にフリーランスとして活動しているエンジニアが直接講師を勤めます。</p>
+        </div>
+        <div class="recommend-item">
+          <img src="https://kazukiyam.github.io/iSara/img/learnfromprojects.jpg" alt="#">
+          <h5>実践を通じて学べる</h5>
+          <p>
+            フリーランスにとって最短の学習方法は「実践」。iSaraでは実案件を通して学びます。現役フリーランサーの案件サポートに加え、クラウドソーシングを活用。初心者の自分じゃ無理と思うかもですが、現役フリーランスがサポートしますので大丈夫。
+          </p>
+        </div>
+        <div class="recommend-item">
+          <img src="https://kazukiyam.github.io/iSara/img/actuallyfree.jpg" alt="#">
+          <h5>授業料が実質０円</h5>
+          <p>講座費用258,000円以上の金額が稼げるまで「永久サポート延長」があります。</p>
+        </div>
+      </div>
+      <div class="recommend-benefit">
+        <h3>さらに！帰国後もサポート付き</h3>
+        <h5>リモートワーカーのチームを作ることで受注率、受注単価が大幅に向上します。</h5>
+        <p>iSaraは講座が終わって終了ではありません。
+          参加メンバーのチャットグループを作り、帰国後も継続的に案件参加できるようになります。
+          また、チームで働くことで継続的に稼ぎやすい仕組みづくりも構築しております。</p>
+      </div>
+      <p>事前課題ができない人はお断りしております。iSaraでは、無料で学べるプログラミング基礎知識は教えません。事前課題一覧はメールで送りつつ、チャットサポートのみ。従って、本気で取り組まないと結果は出ません。</p>
+    </div>
+  </div>
+  <!-- about-recommend -->
+
+  <!-- member -->
+  <div id="member" class="member">
+    <div class="container">
+      <h3 class="fas fa-id-card">創業メンバー</h3>
+      <p class="p">実際にフリーランスとして活躍しているエンジニアが立ち上げました</p>
+      <div class="member-box">
+        <img src="https://kazukiyam.github.io/iSara/img/keisuke_someya.jpg" alt="#">
+        <p>フリーランス講師</p>
+        <p>染谷 佳佑</p>
+        <p class="left">ISARA (THAILAND)
+          CO.,LTD.の代表です。学生起業の後にリクルートへ就職、その後独立し、海外移住しました。今はフリーランスとしてリモートワークで日本円を稼ぎ、外国通貨に変えて使い、海外を旅してます。営業、ブログPVアップ(最高月間150万PV)、ビジネス構築が専門です。
+        </p>
+      </div>
+      <div class="member-box">
+        <img src="https://kazukiyam.github.io/iSara/img/yuki.png" alt="#">
+        <p>フリーランス講師</p>
+        <p>成田　雄輝</p>
+        <p class="left">バンコクのシェアハウスのオーナーをやりながら一年の大半をタイで過ごしています。 大学時代から今に至るまでネットだけで生計を立てているので、自由歴だけは講師陣の中で最長です！
+          母親がタイ人という事もありタイには精通してますので、こちらでの生活のサポートはお任せください！</p>
+      </div>
+      <div class="member-box">
+        <img src="https://kazukiyam.github.io/iSara/img/shohey.png" alt="#">
+        <p>フリーランスエンジニア</p>
+        <p>大滝　昇平</p>
+        <p class="left">
+          月の半分は東京の会社にリモートで勤めつつ、フリーでも活動しているエンジニアです。Laravel・WordPressでのWeb制作がコアスキル。立ち上げメンバーとしてカリキュラム原案制作に参画し、現在は外部アドバイザーをしています！
+        </p>
+      </div>
+      <div class="member-box">
+        <img src="https://kazukiyam.github.io/iSara/img/manabu.png" alt="#">
+        <p>フリーランスエンジニア</p>
+        <p>坂内　学</p>
+        <p class="left">アドバイザーとして参画しました。新卒で海外就職して１１ヶ月後に退職。今は日本にいたり海外にいたりでゆるくフリーランスをしています。<br>
+          <br>
+          お仕事はWebマーケティングとプログラミングが専門領域です。</p>
+      </div>
+    </div>
+  </div>
+  <!-- member -->
+
+  <!-- Q&A -->
+  <div id="question" class="question">
+    <div class="container">
+      <h3>Q&A</h3>
+      <h5 class="bracket-white">ノマドエンジニアとして自由に稼ぐことは<br>
+        「 本当に 」可能なのか？</h5>
+      <i class="caret fas fa-caret-down"></i>
+    </div>
+  </div>
+  <div id="answer" class="answer">
+    <div class="container">
+      <h3>実現可能です</h3>
+      <p>その証拠に第三者の声を聞いてみました。</p>
+      <p class="small">＊実際にフリーランスエンジニアを採用する企業様から、メッセージをいただきました。</p>
+      <div class="answers">
+        <img src="https://kazukiyam.github.io/iSara/img/take.jpg" alt="#">
+        <h5>リモートワークという言葉がありますが、弊社では何も気にしません。エンジニアに求めるのは、快適なコミュニケーションと信頼と成果物のみ。<br><span>Kredo IT Abroad . Inc 代表取締役 横田
+            猛夫</span>
+        </h5>
+      </div>
+      <div class="answers">
+        <img src="https://kazukiyam.github.io/iSara/img/minami_sato.jpg" alt="#">
+        <h5>社内でスキルのある人材を採用するのは難しい。外部パートナーとして継続的に依頼できるフリーランスには助かっています。<br><span>SAPEUR . Inc 代表取締役 佐藤 陽</span></h5>
+      </div>
+      <div class="answers">
+        <img src="https://kazukiyam.github.io/iSara/img/asada.jpg" alt="#">
+        <h5>プログラマーが足りていないときに外部リソースとして、フリーランスに発注しています。今はどこの会社でもエンジニアが不足していますね。<br><span>株式会社BeautifulWorks 代表取締役 淺田
+            百合</span></h5>
+      </div>
+    </div>
+  </div>
+  <!-- Q&A -->
+
+  <!-- learning -->
+  <div id="learning" class="learning">
+    <div class="container">
+      <h3>iSara[イサラ]で学べる内容</h3>
+      <p>渡航前の事前課題と渡航中に学べることの一覧です。</p>
+      <div class="lesson">
+        <table>
+          <th>渡航前の事前学習</th>
+          <td>０から始めるプログラミング事前学習講座</td>
+          <td>参加者グループコミュニティ</td>
+          <td>チャットサポート</td>
+          <td>事前スカイプコンサル</td>
+          <td>環境構築の事前学習</td>
+          <td>jQueryの事前学習講座</td>
+          <td>Bootstrapの事前講座</td>
+          <td>PHP / Mysqlの事前学習講座</td>
+          <td>稼ぐためのHTML/CSS講座</td>
+          <td>WordPressの事前学習講座</td>
+        </table>
+      </div>
+      <div class="lesson">
+        <table>
+          <th>バンコク渡航中</th>
+          <td>フリーランス独立術講座</td>
+          <td>実際の実務案件をこなす</td>
+          <td>ノマドフリーランス体験</td>
+          <td>バンコク生活体験</td>
+          <td>クラウドソーシング活用講座</td>
+          <td>フリーランスのための営業講座</td>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- learning -->
+
+  <!-- learning-support -->
+  <div class="learning-support">
+    <div class="container">
+      <p>講座費用258,000円以上の金額が稼げるまで「永久サポート延長」します。<br>
+        つまりリスク０で参加できます。</p>
+    </div>
+  </div>
+  <!-- learning-support -->
+
+  <!-- schedule for pc -->
+  <div id="schedule-pc" class="schedule-pc">
+    <div class="container">
+      <h3>受講の流れ</h3>
+      <img class="pc-img" src="https://kazukiyam.github.io/iSara/img/flow.jpg" alt="#">
+      <div class="schedule-box">
+        <div class="boxes">
+          <div class="boxes-left">
+            <img src="https://kazukiyam.github.io/iSara/img/skypeconsulting.png" alt="#">
+            <h5>Skypeで<br>
+              事前コンサル</h5>
+          </div>
+          <div class="boxes-right">
+            <p>現在のスキルの状況、パソコンの環境説明、渡航での注意点を話します。</p>
+            <p>簡単なテストあり</p>
+            <p>
+              iSaraでは受講料を稼げることを保障しています。従って、事前コンサル時点で簡単なテストを実施し、場合によってはお断りをしております。（テストの内容はPCの基礎知識に関するテストですので、普段からパソコンを利用する方でしたら問題ありません。テストはもちろん無料ですので、まずはお問い合わせください。）
+            </p>
+          </div>
+        </div>
+        <img src="/https://kazukiyam.github.io/iSara/img/flowline1.png" alt="#">
+        <div class="boxes">
+          <div class="boxes-left">
+            <img src="https://kazukiyam.github.io/iSara/img/preworks.png" alt="#">
+            <p>事前課題の提出</p>
+          </div>
+          <div class="boxes-right">
+            <p>出発前の１ヶ月前に事前課題を送ります。</p>
+            <p>０から始めるプログラミング事前学習講座、環境構築の事前学習、jQueryの事前学習講座、Bootstrapの事前学習講座、PHP / Mysqlの事前講座</p>
+            <p>課題は多いですが、ここで努力が必須です。プログラミングは高付加価値なスキルです。そのためには学習が必須です。回数無制限のチャットサポート付きですので、最初は努力してください。<br>
+              また、参加者グループコミュニティも作成するので、横の繋がりでモチベーションを高めることもできます。</p>
+          </div>
+        </div>
+        <img src="/https://kazukiyam.github.io/iSara/img/flowline2.png" alt="#">
+        <div class="boxes">
+          <div class="boxes-left">
+            <img src="https://kazukiyam.github.io/iSara/img/flight.png" alt="#">
+            <p>現地に渡航</p>
+          </div>
+          <div class="boxes-right">
+            <p>到着日には空港でお出迎えし、初日のオリエンテーションを行います。
+              滞在先は空港からすぐの出来たてシェアハウス。美味しいタイ料理などもご紹介します。</p>
+            <p>iSaraは『ノマド』フリーランス養成講座です。
+              楽しいノマド体験ができるよう、バンコクでの生活はこちらでサポートします。</p>
+          </div>
+        </div>
+        <img src="/https://kazukiyam.github.io/iSara/img/flowline1.png" alt="#">
+        <div class="boxes">
+          <div class="boxes-left">
+            <img src="https://kazukiyam.github.io/iSara/img/personwithlight.png" alt="#">
+            <p>実案件を<br>
+              通して学ぶ</p>
+          </div>
+          <div class="boxes-right">
+            <p>現役フリーランスが抱える案件に加え、クラウドソーシングを使って実案件をこなします。</p>
+            <p>案件獲得のためのメールの書き方や見積りの仕方など、
+              他のプログラミングスクールでは教えてくれない実務スキルを学ぶことができます。</p>
+            <p>＊現役フリーランスがサポートします。</p>
+          </div>
+        </div>
+        <img src="/https://kazukiyam.github.io/iSara/img/flowline2.png" alt="#">
+        <div class="boxes">
+          <div class="boxes-left">
+            <img src="https://kazukiyam.github.io/iSara/img/jobsupport.png" alt="#">
+            <p>帰国後の仕事獲得<br>
+              サポート付き</p>
+          </div>
+          <div class="boxes-right">
+            <p>経験年数の少ないフリーランスが高単価で継続的に仕事受注するコツ、それがチームを組むことです。</p>
+            <p>iSaraではフリーランスコミュニティを形成し、帰国後のエンジニアでも継続的に稼げる仕組みを提供します。</p>
+            <p>もちろん、個人で十分に稼げるようになった場合はいつでも脱退できますし、制限などは何もありません。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- schedule for sp-->
+  <div id="schedule-sp" class="schedule-sp">
+    <div class="container">
+      <h3>受講の流れ</h3>
+      <div class="schedule-accordion">
+        <div class="schedule-article-title">
+          <img src="https://kazukiyam.github.io/iSara/img/skypeconsulting.png" alt="#">
+          <p>Skypeで事前コンサル</p>
+        </div>
+        <div class="schedule-accordion-content">
+          <p>現在のスキルの状況、パソコンの環境説明、渡航での注意点を話します。</p>
+          <p>簡単なテストあり</p>
+          <p>
+            iSaraでは受講料を稼げることを保障しています。従って、事前コンサル時点で簡単なテストを実施し、場合によってはお断りをしております。（テストの内容はPCの基礎知識に関するテストですので、普段からパソコンを利用する方でしたら問題ありません。テストはもちろん無料ですので、まずはお問い合わせください。）
+          </p>
+        </div>
+      </div>
+
+      <div class="schedule-accordion">
+        <div class="schedule-article-title">
+          <img src="https://kazukiyam.github.io/iSara/img/preworks.png" alt="#">
+          <p>事前課題の提出</p>
+        </div>
+        <div class="schedule-accordion-content">
+          <p>出発前の１ヶ月前に事前課題を送ります。</p>
+          <p>０から始めるプログラミング事前学習講座、環境構築の事前学習、jQueryの事前学習講座、Bootstrapの事前学習講座、PHP / Mysqlの事前講座</p>
+          <p>課題は多いですが、ここで努力が必須です。プログラミングは高付加価値なスキルです。そのためには学習が必須です。回数無制限のチャットサポート付きですので、最初は努力してください。
+            また、参加者グループコミュニティも作成するので、横の繋がりでモチベーションを高めることもできます。</p>
+        </div>
+      </div>
+
+      <div class="schedule-accordion">
+        <div class="schedule-article-title">
+          <img src="https://kazukiyam.github.io/iSara/img/flight.png" alt="#">
+          <p>現地に渡航</p>
+        </div>
+        <div class="schedule-accordion-content">
+          <p>到着日には空港でお出迎えし、初日のオリエンテーションを行います。
+            滞在先は空港からすぐの出来たてシェアハウス。美味しいタイ料理などもご紹介します。</p>
+          <p>iSaraは『ノマド』フリーランス養成講座です。
+            楽しいノマド体験ができるよう、バンコクでの生活はこちらでサポートします。</p>
+        </div>
+      </div>
+
+      <div class="schedule-accordion">
+        <div class="schedule-article-title">
+          <img src="https://kazukiyam.github.io/iSara/img/personwithlight.png" alt="#">
+          <p>実案件を
+            通して学ぶ</p>
+        </div>
+        <div class="schedule-accordion-content">
+          <p>現役フリーランスが抱える案件に加え、クラウドソーシングを使って実案件をこなします。</p>
+          <p>案件獲得のためのメールの書き方や見積りの仕方など、
+            他のプログラミングスクールでは教えてくれない実務スキルを学ぶことができます。</p>
+          <p>＊現役フリーランスがサポートします。</p>
+        </div>
+      </div>
+
+      <div class="schedule-accordion">
+        <div class="schedule-article-title">
+          <img src="https://kazukiyam.github.io/iSara/img/jobsupport.png" alt="#">
+          <p>帰国後の仕事獲得
+            サポート付き</p>
+        </div>
+        <div class="schedule-accordion-content">
+          <p>経験年数の少ないフリーランスが高単価で継続的に仕事受注するコツ、それがチームを組むことです。</p>
+          <p>iSaraではフリーランスコミュニティを形成し、帰国後のエンジニアでも継続的に稼げる仕組みを提供します。</p>
+          <p>もちろん、個人で十分に稼げるようになった場合はいつでも脱退できますし、制限などは何もありません。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- schedule -->
+
+
+  <!-- Bangkok -->
+  <div id="bangkok" class="bangkok">
+    <div class="container">
+      <h4>なぜバンコクなのか？</h4>
+      <p class="light">ここまで見ると、iSaraは日本でも実施可能に見えます。<br>
+        しかし、バンコクを選んだのには理由があります。</p>
+      <p class="bold">・プログラミングフリーランスの最先端<br>
+        ・水準は日本と同じなのに、生活費が安い（毎月８万円ほど）<br>
+        ・昼、夜共に遊びが充実（稼ぐモチベーションアップと息抜きにGOOD）<br>
+        ・日本人が住みやすい（食事が美味しい / 気候が良い / 親日である）<br></p>
+      <p class="sp-big">環境が大切。さらにこの価格が実現できるのが、バンコクなのです。</p>
+    </div>
+  </div>
+  <!-- Bangkok -->
+
+  <!-- benefit -->
+  <div id="benefit" class="benefit">
+    <div class="container">
+      <h3>iSara受講生への参加特典</h3>
+      <p><span class="sp-white">講座費用258,000円以上の金額が稼げるまでの「永久サポート延長」</span>を追加します。つまり、<span
+          class="sp-white">実質０円です。</span></p>
+      <!-- benefit-group for pc -->
+      <div class="benefit-group-pc">
+        <h3>iSaraは『実質０円』！更なる特典もあります。</h3>
+        <div class="benefit-box">
+          <h4>特典１</h4>
+          <p>講座費用258,000円以上の金額が稼げるまで、「永久サポート延長」。リスク０で参加できます。</p>
+        </div>
+        <div class="benefit-box">
+          <h4>特典２</h4>
+          <p>iSaraフリーランスコミュニティ参加権利。案件の紹介や、新施設OPENの際の優先利用権が受けられます。</p>
+        </div>
+        <div class="benefit-box">
+          <h4>特典３</h4>
+          <p>講座参加後のシェアハウス利用権利（ドンムアン空港至近のため、とても便利です）</p>
+        </div>
+      </div>
+      <!-- benefit-group for sp -->
+      <div class="benefit-group-sp">
+        <h3>iSaraは『実質０円』！<br>更なる特典もあります。</h3>
+        <div class="benefit-flex">
+          <h4>特典１</h4>
+          <p>参加費以上の金額が稼げるまで「永久サポート」参加費用は実質0円です。</p>
+        </div>
+        <div class="benefit-flex">
+          <h4>特典２</h4>
+          <p>フリーランスエンジニアになる為の動画講義を無料プレゼント</p>
+        </div>
+        <div class="benefit-flex">
+          <h4>特典３</h4>
+          <p>フリーランス講師による個別コンサル（渡航前の週１回）</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- benefit -->
+
+  <!-- value -->
+  <div id="value" class="value">
+    <div class="container">
+      <h3>iSaraはボランティアではありません</h3>
+      <p>ここまでみると、実質０円で各種サポートもある、特典が多すぎて逆に怪しい。<br>
+        そう思われるかもしれません。<br>
+        しかし、iSaraが目指すことは異なります。</p>
+      <h3 class="bracket-white">月１０万円稼げるエンジニアを輩出し続ける。</h3>
+      <p>最大の価値がこれです。<br>
+        iSaraの卒業生が稼ぎ続けることで、小さな経済が動き始めます。<br>
+        ここに最大の価値があり、この講座はその序章にすぎません。</p>
+    </div>
+  </div>
+  <!-- value -->
+
+  <!-- message -->
+  <div id="message" class="message">
+    <div class="container">
+      <h3>創業者からのメッセージ</h3>
+      <p>「一生もののスキル」を身につけ、ノマドライフを楽しもう！</p>
+      <img src="https://kazukiyam.github.io/iSara/img/IMG_1139-768x576.jpg" alt="#">
+      <p class="speech">初めまして。「iSara（イサラ）」創業者の染谷佳佑と申します。</p>
+      <p class="speech">iSaraの開講は、僕達講師陣にとってもとても大きな挑戦です。今回、参加者に圧倒的な価値提供をするために、超少人数制だからできる内容を用意しました。</p>
+      <p class="speech">・「Webエンジニアとして稼ぐ」に特化した超実践的カリキュラム
+        ・フリーランスとして生計を立て、いつでも世界中を旅できるスキル、収入のある講師陣のみを厳選
+        ・講座参加者が25万8,000円の参加費以上を稼ぐまでの無期限サポート延長</p>
+      <p class="speech">ここまでのカリキュラムを備えた講座は、世界で唯一iSaraだけでしょう。 iSaraでプログラミングや営業を学ぶことで、「一生ものの潰しが効くスキル」が身につきます。
+        もちろん勉強だけでなく、バンコクを楽しめるプログラムも用意しています！</p>
+      <p class="speech">３ヶ月間徹底的にサポートします。ぜひバンコクでお会いしましょう。</p>
+    </div>
+  </div>
+  <!-- message -->
+
+  <!-- contact2 -->
+  <div id="contact2" class="contact2">
+    <div class="container">
+      <h3>資料請求フォーム</h3>
+      <p>まずは無料で資料請求からどうぞ。</p>
+      <div class="contact-form">
+        <input placeholder="姓">
+        <input placeholder="名">
+        <input placeholder="メールアドレス">
+        <div class="contact-detail box">
+          <textarea placeholder="お問い合わせ内容を入力してください"></textarea>
+        </div>
+        <a class="submit" href="#">送信</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact-form -->
+
+  <!-- question -->
+  <div id="questions" class="questions">
+    <div class="container">
+
+ 
+    <h3>よくある質問</h3>
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>プログラミングスキルは必要ですか？
+      </p>
+      <p class="question-accordion-content">いいえ、必要ありません。しかし、iSaraでは参加費以上の金額が稼げることを保障しています。
+        従って、事前通話面談時点で簡単なテストを実施し、場合によってはお断りをしております。この点だけはご了承ください。</p>
+    </div>
+
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>参加費以上に稼げなかったらどうなりますか？
+      </p>
+      <p class="question-accordion-content">
+        参加費である258,000円以上の金額をトータルで稼ぐまで、無期限でサポート延長いたします。（講座参加後、週30時間以上の実践をすることと、週１回の実践報告をすることが延長条件です。）きちんと学び実践すれば、フリーランスでも収入を作ることは十分に可能です。
+
+      </p>
+    </div>
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>滞在中の宿泊先はどうなりますか？
+      </p>
+      <p class="question-accordion-content">宿泊費用が必要ですが、iSara提携のホステルに宿泊することになりますので心配はありません。
+      </p>
+    </div>
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>滞在中の食事はどうなりますか？
+      </p>
+      <p class="question-accordion-content">拠点となる新築シェアハウスの周辺に、50バーツ程度の（160円）安価な飲食店が多数あります。 日本食レストランもありますし、出前を取ることも可能です。
+
+      </p>
+    </div>
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>追加でかかる費用はありますか？
+      </p>
+      <p class="question-accordion-content">宿泊費（トータル20000円）と食費（一食150円程度）くらいです。
+
+      </p>
+    </div>
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>就職、転職はできますか？
+      </p>
+      <p class="question-accordion-content">
+        DODAの調査によると、2017年のエンジニアの求人倍率は7.5倍です。これは、人材不足が叫ばれる医療業界（医師：6倍、看護師：3倍）よりも高い数値です。ですのできちんとしたスキルを身につけることができれば、就職・転職には困らないはずです。元リクルートの転職のプロも運営スタッフとして参加しています。
+
+      </p>
+    </div>
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>フリーランスにならなければならないのですか？
+      </p>
+      <p class="question-accordion-content">いいえ、必ずフリーランスにならないといけないわけではありません。 実際に過去の卒業生の方の進路も、独立、副業として続ける、就職するなど様々です。
+
+      </p>
+    </div>
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>ノマドワーカー的に世界を旅しながら働きたいです。可能ですか？
+      </p>
+      <p class="question-accordion-content">きちんと努力し、スキルを身に着けることができれば可能です。
+        iSaraは、「好きなときに働き、好きなときに遊ぶ」という人生を送れる人を増やすために開講しました。 ちなみに、講師は全員ノマドワーカーとして、働きながら自由に世界中を旅しています。
+
+      </p>
+    </div>
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>学ぶプログラミング言語はなんですか？
+      </p>
+      <p class="question-accordion-content">HTML / CSS / PHPを学びます。どの言語も需要が高いです。
+
+      </p>
+    </div>
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>将来的にwebサービス、アプリ、メディアを作りたいです。
+      </p>
+      <p class="question-accordion-content">経験してる講師がいますよ。大丈夫です。
+
+      </p>
+    </div>
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>次回開催の予定はありますか？
+      </p>
+      <p class="question-accordion-content">
+        未定です。まずはお問合せください。
+      </p>
+    </div>
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>海外に出るのが初めてで不安です。
+      </p>
+      <p class="question-accordion-content">講師陣が現地での生活をサポートしますので安心してください。ただしパスポート取得は必要です。
+
+      </p>
+    </div>
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>タイ語、英語が一切話せません。参加可能でしょうか。
+      </p>
+      <p class="question-accordion-content">タイ語スタッフ、英語スタッフがいるのでOKです。日本人、タイ人スタッフがおりますので、期間中のトラブル対応の心配は必要ありません。
+
+      </p>
+    </div>
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>治安はどうですか？
+      </p>
+      <p class="question-accordion-content">
+        バンコクは、東南アジアや南アジアの他の国の都市部と比べると、街中も整備されており、非常に治安の良い街です。日本ほどではないですが、世界でも非常に治安の良い国として知られています。
+
+      </p>
+    </div>
+
+    <div class="question-accordion">
+      <p class="question-article-title">
+        <i class="far fa-question-circle"></i>パソコンは必要ですか？
+      </p>
+      <p class="question-accordion-content"> はい。ノートPCのご用意が必要です。
+
+      </p>
+    </div>
+  </div>
+  </div>
+
+  <!-- question -->
+
+  <!-- footer -->
+  <footer>
+    <p>バンコクのノマドエンジニア育成講座、iSara[イサラ] <br>
+      Copyright ©︎ iSara All Rights Reserved.</p>
+    <a href="#" class="sns fab fa-twitter">ツイート</a>
+    <a href="#" class="sns fas fa-thumbs-up">いいね！</a>
+    <a class="sns share" href="#">シェア</a>
+    <p>Designed by <a class="name" href="#">Maya Ogi</a> / Developed by <a class="name" href="#">Kentaro Koga</a> </p>
+  </footer>
+  <!-- footer -->
+
+
+</body>
+
+</html>
